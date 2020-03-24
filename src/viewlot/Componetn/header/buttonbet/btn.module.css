@@ -1,0 +1,25 @@
+.btn{
+    padding: 14px 28px;
+    background: #0B9C4C;
+    mix-blend-mode: normal;
+    border: 1px solid #0B9C4C;
+    box-sizing: border-box;
+    border-radius: 2px;
+    align-self: center;
+}
+.btn:hover{
+    background: #07874B;
+    cursor: pointer;
+}
+.btn:active{
+    background: #0B9C4C;
+}
+.btn:disabled{
+    background: #0B9C4C;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.btn p{
+    margin: 0;
+    color: #FFFFFF;
+}

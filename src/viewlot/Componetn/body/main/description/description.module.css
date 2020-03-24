@@ -1,0 +1,11 @@
+.description{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    border-bottom: 1px solid #D9DFE5;
+}
+.description span{
+    color: #4E5762;
+    margin: 17px 0;
+    font-size: 13px;
+}

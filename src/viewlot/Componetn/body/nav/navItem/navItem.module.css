@@ -1,0 +1,22 @@
+.navItem{
+    display: flex;
+    flex-direction: column;
+    height: 73px;
+    align-items: center;
+    border: 1px solid #D9DFE5;
+}
+.navItem svg{
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    margin-bottom: 7px;
+}
+.navItem span{
+    display: flex;
+    flex-direction: row;
+
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #4E5762;
+}

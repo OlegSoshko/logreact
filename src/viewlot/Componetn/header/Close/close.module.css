@@ -1,0 +1,15 @@
+.close svg{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border-radius: 4px;
+}
+.close svg:hover{
+    background: rgba(239, 241, 244, 0.3);
+}
+.close svg:active{
+    background: rgba(239, 241, 244, 0.5);
+}
+.close svg:active > path{
+    stroke: black;
+}

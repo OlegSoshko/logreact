@@ -1,0 +1,8 @@
+.card{
+    width: 244px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.card .description{
+    margin: 0;
+}

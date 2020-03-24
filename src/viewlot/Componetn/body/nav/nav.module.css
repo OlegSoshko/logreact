@@ -1,0 +1,7 @@
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    border-left: 1px solid #D9DFE5;
+    height: 500px;
+}

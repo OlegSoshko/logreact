@@ -1,0 +1,17 @@
+.head{
+    width: 87px;
+    height: 100%;
+    margin-right: 20px;
+    display:inline-block
+}
+.head text{
+    font-size: 13px;
+    color: #D9DFE5;
+}
+.head  span{
+    display: flex;
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}

@@ -82,6 +82,7 @@ module.exports = function(webpackEnv) {
       {
         loader: require.resolve('css-loader'),
         options: cssOptions,
+        
       },
       {
         // Options for PostCSS as we reference these options twice
@@ -432,6 +433,7 @@ module.exports = function(webpackEnv) {
               use: getStyleLoaders({
                 importLoaders: 1,
                 sourceMap: isEnvProduction && shouldUseSourceMap,
+                
               }),
               // Don't consider CSS imports dead code even if the
               // containing package claims to have no side effects.
@@ -449,6 +451,7 @@ module.exports = function(webpackEnv) {
                 modules: {
                   getLocalIdent: getCSSModuleLocalIdent,
                 },
+               
               }),
             },
             // Opt-in support for SASS (using .scss or .sass extensions).
@@ -461,6 +464,7 @@ module.exports = function(webpackEnv) {
                 {
                   importLoaders: 3,
                   sourceMap: isEnvProduction && shouldUseSourceMap,
+                  localIdentName: '[name]__[local]__[hash:base64:5]',
                 },
                 'sass-loader'
               ),
@@ -481,6 +485,7 @@ module.exports = function(webpackEnv) {
                   modules: {
                     getLocalIdent: getCSSModuleLocalIdent,
                   },
+                  localIdentName: '[name]__[local]__[hash:base64:5]',
                 },
                 'sass-loader'
               ),

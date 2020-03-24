@@ -1,0 +1,33 @@
+header{
+    position: relative;
+    height: 134px;
+    background: #2C2730;
+    color:  white;
+}
+
+header button{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: 22px;
+    left: 30px;
+    top: 24px;
+}
+
+.title span{
+    font-size: 18px;
+    align-self: center;
+    margin: 10px 0px;
+}
+
+.headscbt{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
