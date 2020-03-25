@@ -1,10 +1,28 @@
-.viewlot{
-    width: 680px;
-    height: 500px;
-    margin: 0 auto;
-    border: 1px solid grey;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    border-radius: 2px;
-    font-family: Roboto;
+::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
 }
 
+.viewlot{
+
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+
+    width: 680px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    box-shadow: 0px 3px 24px rgba(44, 39, 48, 0.16), 0px 8px 16px rgba(44, 39, 48, 0.28), 0px 4px 8px rgba(44, 39, 48, 0.32);
+    border-radius: 2px;
+    font-family: Roboto;
+    overflow: auto;
+}
+
+
+/*::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #666; }
+::-webkit-scrollbar-track {  background-color: #999;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}
+::-webkit-resizer { background-color: #666;}
+*/

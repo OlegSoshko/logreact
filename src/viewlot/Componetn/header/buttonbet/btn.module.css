@@ -1,5 +1,5 @@
-.btn{
-    padding: 14px 28px;
+.btn-green{
+    padding: 11px 28px;
     background: #0B9C4C;
     mix-blend-mode: normal;
     border: 1px solid #0B9C4C;
@@ -7,19 +7,19 @@
     border-radius: 2px;
     align-self: center;
 }
-.btn:hover{
+.btn-green:hover{
     background: #07874B;
     cursor: pointer;
 }
-.btn:active{
+.btn-green:active{
     background: #0B9C4C;
 }
-.btn:disabled{
+.btn-green:disabled{
     background: #0B9C4C;
     opacity: 0.6;
     pointer-events: none;
 }
-.btn p{
+.btn-green p{
     margin: 0;
     color: #FFFFFF;
 }

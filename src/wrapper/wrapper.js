@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Viewlot from '../viewlot/viewlot.js'
 import classes from './wrapper.module.css'
-import BtnBet from '../viewlot/Componetn/header/buttonbet/btn.js'
+import Button from '../viewlot/Componetn/header/buttonbet/btn.js'
 
 class Wrapper extends Component
 {
@@ -24,7 +24,7 @@ class Wrapper extends Component
     render(){
         return(
             <div className={classes.wrapper}>
-                {this.state.visible ? <Viewlot onClose={this.handleChangeVisible}/> : <BtnBet value='Открыть' onClick={this.handleChangeVisible}/>}
+                {this.state.visible ? <Viewlot onClose={this.handleChangeVisible}/> : <Button value='Открыть' type='btn-green' onClick={this.handleChangeVisible}/>}
             </div>
         )
     }

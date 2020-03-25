@@ -1,0 +1,16 @@
+.Item{
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #D9DFE5;
+}
+.Item span{
+    width: 50%;
+    align-items: center;
+    font-size: 13px;
+    line-height: 15px;
+    color: #2C2730;
+
+}
+.Item span text{
+    margin-right: 8px;
+}

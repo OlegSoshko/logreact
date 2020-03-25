@@ -1,0 +1,15 @@
+.Tag{
+    padding: 6px 8px;
+    background: #EFF1F4;
+    border: 1px solid #D9DFE5;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin: 5px 0px;
+    margin-right: 5px;
+}
+.Tag small{
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    color: #2C2730;
+}

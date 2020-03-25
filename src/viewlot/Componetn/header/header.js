@@ -22,7 +22,9 @@ export default (props) => {
                 <Head text='Ставок' value={props.countBet}/>
                 <Head text='Шаг' value={props.step}/>
             </div>
-            <Button value={bet}/>
+            <Button 
+                value={bet} 
+                type='btn-green'/>
             <Close onClick={props.onClose}/>
         </header>
     )

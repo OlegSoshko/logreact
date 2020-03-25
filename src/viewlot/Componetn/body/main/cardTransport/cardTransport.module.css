@@ -1,8 +1,22 @@
 .card{
-    width: 244px;
-    margin-left: 30px;
-    margin-right: 20px;
+    width: 260px;
+    border: 1px solid #D9DFE5;
+    box-sizing: border-box;
+    border-radius: 2px;
 }
-.card .description{
-    margin: 0;
+.card div:first-child span{
+    color: #2C2730;
+    opacity: 0.9;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+}
+.card div:last-child span:last-child{
+    color: green;
+}
+.card .tags{
+    display: flex;
+    margin: 12px 20px 23px 20px;
 }

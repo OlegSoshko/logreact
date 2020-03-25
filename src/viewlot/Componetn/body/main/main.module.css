@@ -3,6 +3,8 @@
     flex-direction: column;
     width: 600px;
     height: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
 }
 .main h3{
     font-weight: 500;
@@ -10,5 +12,5 @@
     line-height: 19px;
     align-items: center;
     color: #2C2730;
-    margin: 20px 30px 8px 30px;
+    margin: 20px 0px 8px 0px;
 }

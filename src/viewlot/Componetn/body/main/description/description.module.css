@@ -1,11 +1,21 @@
 .description{
     display: flex;
     justify-content: space-between;
-    margin: 0 30px;
     border-bottom: 1px solid #D9DFE5;
 }
-.description span{
+.default, .organizer{
+    padding: 17px 0;
     color: #4E5762;
-    margin: 17px 0;
     font-size: 13px;
+}
+.card{
+    margin: 0 20px;
+    padding: 7px 0;
+    color: #4E5762;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.organizer span + span{
+    color: green;
 }

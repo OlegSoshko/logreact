@@ -2,12 +2,14 @@ import React from 'react'
 import classes from './cardTransport.module.css'
 
 import Description from '../description/description'
+import Tag from './Tag/Tag'
 
-export default () => {
+export default props => {
     return(
         <div className={classes.card}>
             <Description 
-                title = 'Мультирежим рефрижератор'
+                type='card'
+                title = {props.type}
                 value = {
                     <svg width="72" height="26" viewBox="0 0 72 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M29 1H1V18H29V1ZM4 3C3.44772 3 3 3.44772 3 4V15C3 15.5523 3.44772 16 4 16H26C26.5523 16 27 15.5523 27 15V4C27 3.44772 26.5523 3 26 3H4ZM55 1H30V18H55V1ZM33 3C32.4477 3 32 3.44772 32 4V15C32 15.5523 32.4477 16 33 16H52C52.5523 16 53 15.5523 53 15V4C53 3.44772 52.5523 3 52 3H33ZM58.1918 1H60.1644C61.4466 1 62.5315 1.8 62.926 3H58.1918V1ZM71.0137 18C70.4219 18 70.0274 18.4 70.0274 19V21H68.9425C68.4493 18.7 66.4767 17 64.1096 17C61.7425 17 59.7699 18.7 59.2767 21H58.1918V19V18V4H64.1096H68.0548C69.337 4 70.4219 4.8 70.8164 6H61.1507C60.5589 6 60.1644 6.4 60.1644 7V11C60.1644 11.6 60.5589 12 61.1507 12H63.3205C63.8137 12 64.3068 12.2 64.7014 12.6L65.7863 13.7C65.9836 13.9 66.1808 14 66.4767 14H71.0137V18ZM60.6575 15H62.6301C62.926 15 63.1233 14.8 63.1233 14.5C63.1233 14.2 62.926 14 62.6301 14H60.6575C60.3616 14 60.1644 14.2 60.1644 14.5C60.1644 14.8 60.3616 15 60.6575 15ZM7.39726 19.3V21H9.96164C10.1589 20.3 10.4548 19.6 10.8493 19H7.89041C7.59452 19 7.39726 19.1 7.39726 19.3ZM19.2329 19.9C19.1342 19.6 18.937 19.3 18.7397 19H19.726C19.5288 19.3 19.3315 19.6 19.2329 19.9ZM57.2054 19H53.9506C55.1342 19 56.1205 19.9 56.2191 21H57.2054V19ZM27.6164 19H34.5205C34.126 19.6 33.8301 20.3 33.6329 21H28.5041C28.3068 20.1 28.1096 19.7 27.6164 19ZM43.2986 21H46.3562C46.4548 19.9 47.4411 19 48.6247 19H42.411C42.8055 19.6 43.1014 20.3 43.2986 21Z" fill="#D9DFE5"/>
@@ -15,6 +17,30 @@ export default () => {
                     </svg>
                 } 
             />
+            <Description 
+                type='card'
+                title='Тоннаж, т'
+                value={props.tonnage}
+            />
+            <Description 
+                type='card'
+                title='Объём, м³'
+                value={props.volume}
+            />
+            <Description 
+                type='card'
+                title='Темп. режим, °C'
+                value={props.temp}
+            />
+            <Description 
+                type='card'
+                title='Рейс'
+                value={props.trip}
+            />
+            <div className={classes.tags}>
+                <Tag text='Не кантовать'/>
+                <Tag text='Не катить'/>
+            </div>
         </div>
     )
 }
