@@ -19,8 +19,18 @@ class Viewlot extends Component{
         startDate: {day: '1 дек', time: '12:25-13:35'},
         endDate: {day: '2 дек', time: '14:25-16:35'},
         organizer: 'ООО ТК "ДИЗЕЛЬ"',
+        route: [
+          {date: {day: '1 дек', time: '12:25-13:35'}, address: {country: 'Россия', city: 'Иваново', region: 'Ивановская обл.', street: 'ул.Черниковых', home: '30'}},
+          {date: {day: '2 дек', time: '14:25-16:35'}, address: {country: 'Россия', city: 'Калуга', region: 'Ивановская обл.', street: 'тер-я Машзавода', home: 'стр. 1'}}
+        ],
     }
+
+    this.onNavClickHendler = this.onNavClickHendler.bind(this)
   }
+
+  onNavClickHendler = () => {
+    console.log('nav item click')
+}
 
   render(){
     return(
@@ -36,11 +46,11 @@ class Viewlot extends Component{
             <Main 
               startDate={this.state.startDate}
               endDate={this.state.endDate}
+              route = {this.state.route}
               organizer={this.state.organizer}
             />
-            <Nav />
+            <Nav onNavClick={this.onNavClickHendler}/>
         </Body>
-        <p style={{marginTop: 100}}>Hello world!</p>
       </div>
     )
   }

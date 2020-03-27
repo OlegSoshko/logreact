@@ -4,7 +4,25 @@
     height: 73px;
     align-items: center;
     border-bottom: 1px solid #D9DFE5;
+    color: #4E5762;
 }
+
+.navItem:hover{
+    cursor: pointer;
+    color: black;
+}
+.navItem:hover svg path{
+    fill: #111;
+}
+
+.active{
+    color: black;
+}
+
+svg .active path{
+    fill: #111;
+}
+
 .navItem svg{
     display: flex;
     flex-direction: row;
@@ -18,5 +36,4 @@
     font-size: 12px;
     line-height: 14px;
     text-align: center;
-    color: #4E5762;
 }
