@@ -6,7 +6,11 @@ export default props => {
     return(
         <div className={style.join(' ')}>
             <span>{props.title}</span>
-            <span>{props.value}</span>
+            <span>{
+                props.href ? 
+                <a href={props.href}>{props.value}</a> : 
+                props.value
+            }</span>
         </div>
     )
 }

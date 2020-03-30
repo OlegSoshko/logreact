@@ -13,9 +13,9 @@ class Viewlot extends Component{
     
     this.state = {
         lot: 345643756,
-        bet: '400 000',
-        step: '25000,0',
-        countBet: '54',
+        bet: 25000,
+        step: 25000,
+        countBet: 0,
         startDate: {day: '1 дек', time: '12:25-13:35'},
         endDate: {day: '2 дек', time: '14:25-16:35'},
         organizer: 'ООО ТК "ДИЗЕЛЬ"',
@@ -25,12 +25,17 @@ class Viewlot extends Component{
         ],
     }
 
-    this.onNavClickHendler = this.onNavClickHendler.bind(this)
+    this.onButtonClickHandler = this.onButtonClickHandler.bind(this)
   }
 
-  onNavClickHendler = () => {
-    console.log('nav item click')
-}
+  onButtonClickHandler = () => {
+    const bet = this.state.bet + this.state.step
+    const count = this.state.countBet + 1
+    this.setState({
+      bet: bet,
+      countBet: count
+    })
+  }
 
   render(){
     return(
@@ -41,6 +46,7 @@ class Viewlot extends Component{
           step = {this.state.step}
           countBet = {this.state.countBet}
           onClose = {this.props.onClose}
+          onButtonClick={this.onButtonClickHandler}
         />
         <Body>
             <Main 
@@ -49,7 +55,7 @@ class Viewlot extends Component{
               route = {this.state.route}
               organizer={this.state.organizer}
             />
-            <Nav onNavClick={this.onNavClickHendler}/>
+            <Nav/>
         </Body>
       </div>
     )

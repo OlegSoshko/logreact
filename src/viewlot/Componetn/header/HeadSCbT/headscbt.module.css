@@ -4,11 +4,11 @@
     margin-right: 20px;
     display:inline-block
 }
-.head text{
+.head span:first-child{
     font-size: 13px;
     color: #D9DFE5;
 }
-.head  span{
+.head span:last-child{
     display: flex;
     margin-top: 8px;
     font-weight: 500;

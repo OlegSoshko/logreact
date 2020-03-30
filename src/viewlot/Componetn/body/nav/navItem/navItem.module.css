@@ -1,3 +1,6 @@
+a{
+    scroll-behavior: smooth;
+}
 .navItem{
     display: flex;
     flex-direction: column;
@@ -19,21 +22,18 @@
     color: black;
 }
 
-svg .active path{
-    fill: #111;
+.navItem svg path{
+    fill: #8F949B;
 }
 
+.active svg path{
+    fill: #111;
+}
 .navItem svg{
-    display: flex;
-    flex-direction: row;
     margin-top: 16px;
     margin-bottom: 7px;
 }
 .navItem span{
-    display: flex;
-    flex-direction: row;
-
     font-size: 12px;
     line-height: 14px;
-    text-align: center;
 }

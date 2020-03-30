@@ -15,6 +15,7 @@
     border-radius: 2px;
     font-family: Roboto;
     overflow: auto;
+    scroll-behavior: smooth;
 }
 
 

@@ -6,7 +6,7 @@ export default props =>
 {
     return(
         <div className={classes.head}>
-            <text>{props.text}</text>
+            <span>{props.text}</span>
             {
                 (props.value === 'timer') ?  <Timer /> 
                 : <span>{props.value}</span>

@@ -24,11 +24,17 @@ export default props => {
                 type='organizer'
                 title='Организатор' 
                 value={props.organizer}/>
-            <h3>Транспорт</h3>
+            <h3 id="Транспорт">Транспорт</h3>
             <CardList />
-            <h3>Требования к рейсам</h3>
+            <h3 id="Требования">Требования к рейсам</h3>
             <Requirements></Requirements>
-            <h3>Рейсы</h3>
+            <h3 id="Рейсы">Рейсы</h3>
+            <Trip 
+                startDate = {props.startDate}
+                endDate = {props.endDate}
+                address = {props.address}
+                route = {props.route}
+            />
             <Trip 
                 startDate = {props.startDate}
                 endDate = {props.endDate}
