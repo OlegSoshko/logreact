@@ -1,9 +1,9 @@
 import React from 'react'
 import classes from './header.module.css'
 
-import Button from './buttonbet/btn'
+import Button from '../../../UI/Button/btn'
 import Head from './HeadSCbT/headscbt'
-import Close from './Close/close'
+import Close from '../../../UI/ButtonClose/Close'
 
 export default props => {
     const numberLot = 'Перевозка № ' + props.lot;

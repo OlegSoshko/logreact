@@ -5,6 +5,7 @@ import Header from './Componetn/header/header'
 import Body from './Componetn/body/body'
 import Main from './Componetn/body/main/main'
 import Nav from './Componetn/body/nav/nav'
+import Backdrop from '../UI/Backdrop/Backdrop'
 
 class Viewlot extends Component{
 
@@ -39,25 +40,28 @@ class Viewlot extends Component{
 
   render(){
     return(
-      <div className={classes.viewlot}>
-        <Header 
-          lot={this.state.lot}
-          bet = {this.state.bet}
-          step = {this.state.step}
-          countBet = {this.state.countBet}
-          onClose = {this.props.onClose}
-          onButtonClick={this.onButtonClickHandler}
-        />
-        <Body>
-            <Main 
-              startDate={this.state.startDate}
-              endDate={this.state.endDate}
-              route = {this.state.route}
-              organizer={this.state.organizer}
-            />
-            <Nav/>
-        </Body>
-      </div>
+      <React.Fragment>
+        <div className={classes.viewlot}>
+          <Header 
+            lot={this.state.lot}
+            bet = {this.state.bet}
+            step = {this.state.step}
+            countBet = {this.state.countBet}
+            onClose = {this.props.onClose}
+            onButtonClick={this.onButtonClickHandler}
+          />
+          <Body>
+              <Main 
+                startDate={this.state.startDate}
+                endDate={this.state.endDate}
+                route = {this.state.route}
+                organizer={this.state.organizer}
+              />
+              <Nav/>
+          </Body>
+        </div>
+        <Backdrop onClick={this.props.onClose}/>
+      </React.Fragment>
     )
   }
 }

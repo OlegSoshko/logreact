@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Viewlot from '../viewlot/viewlot.js'
 import classes from './wrapper.module.css'
-import Button from '../viewlot/Componetn/header/buttonbet/btn.js'
+import Button from '../UI/Button/btn'
 
 class Wrapper extends Component
 {

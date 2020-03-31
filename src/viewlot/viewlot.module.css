@@ -16,6 +16,8 @@
     font-family: Roboto;
     overflow: auto;
     scroll-behavior: smooth;
+    z-index: 90;
+    background: white;
 }
 
 
