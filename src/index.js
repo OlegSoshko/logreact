@@ -4,10 +4,23 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Wrapper from './wrapper/wrapper.js'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Wrapper />
-  </React.StrictMode>,
+//Redux
+import {createStore} from 'redux'
+import {Provider} from 'react-redux'
+import ViewLotReducer from './store/ViewLot/reducers/viewLotReducer';
+
+
+const store = createStore(ViewLotReducer)
+
+const app = (
+  <Provider store = {store}>
+    <React.StrictMode>
+      <Wrapper />
+    </React.StrictMode>
+  </Provider>
+)
+
+ReactDOM.render(app,
   document.getElementById('root')
 );
 

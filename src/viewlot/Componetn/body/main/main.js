@@ -9,7 +9,6 @@ import Trip from './trip/Trip'
 export default props => {
     const startDate = props.route[0].date.day+', '+props.route[0].date.time
     const endDate = props.route[1].date.day+', '+props.route[1].date.time
-
     return(
         <div className={classes.main}>
             <Description 

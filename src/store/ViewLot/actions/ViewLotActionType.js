@@ -1,0 +1,5 @@
+export const BUTTON_CLICK_HANDLER = 'BUTTON_CLICK_HANDLER'
+export const CLOSE = 'CLOSE'
+export const VISIBLE = 'VISIBLE'
+export const FETCH_LOT_SUCCESS = 'FETCH_LOT_SUCCESS'
+export const FETCH_LOT_ERROR = 'FETCH_LOT_ERROR'

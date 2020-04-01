@@ -14,7 +14,6 @@ class Nav extends Component
                 {title: 'Требования', id: 2},
                 {title: 'Рейсы', id: 3},
             ]
-        
         }
         this.onNavClickHendler = this.onNavClickHendler.bind(this);
     }
