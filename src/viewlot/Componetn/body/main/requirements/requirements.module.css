@@ -1,3 +1,6 @@
 .Requirements{
-    
+    color: #2C2730;
+}
+.Requirements > div:first-child{
+    color: #4E5762;
 }

@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 
+
 import ViewLot from './viewlot'
 import {ButtonClickHandler, Close, FetchLotSuccess} from '../store/ViewLot/actions/ViewLotActions'
 
 class ViewLotContainer extends Component
 {
-
     temp(){
         return{
             id: 345643756,
@@ -27,7 +27,6 @@ class ViewLotContainer extends Component
         this.props.FetchLotSuccess(this.temp())
     }
     render(){
-        console.log('test',this.props )
         return(
             this.props.lot ? <ViewLot {...this.props}/> : null
         )
@@ -36,7 +35,7 @@ class ViewLotContainer extends Component
 
 function mapStateToProps(state){
     return {
-        ...state
+        ...state,
     }
 }
 

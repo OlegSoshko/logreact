@@ -7,7 +7,12 @@ import Help from '../../../../../../UI/Help/Help'
 export default props => {
    return(
        <div className={classes.Item}>
-            <span><span>{props.text}</span>{props.hint ? <Help hint ={props.hint}/> : ''}</span>
+            <span>
+                <span>{props.text}</span>
+                {props.hint 
+                ? <Help hint ={props.hint}/> 
+                : ''}
+            </span>
             <span>{props.value}</span>
        </div>
    )

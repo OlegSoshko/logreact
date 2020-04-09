@@ -1,0 +1,24 @@
+.Hint{
+
+}
+.Hint circle{
+    fill: #FFFFFF;
+    stroke: #8F949B;
+}
+.Hint path{
+    fill: #8F949B;
+}
+.Hint:hover circle{
+    fill: #EFF1F4;
+    stroke: #4E5762;
+}
+.Hint:hover path{
+    fill: #4E5762;
+}
+.Hint:active circle{
+    fill: #D9DFE5;
+    stroke: #2C2730;
+}
+.Hint:active path{
+    fill: #2C2730;
+}

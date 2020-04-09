@@ -25,7 +25,8 @@ export default props => {
             <Button 
                 value={bet} 
                 type='btn-green'
-                onClick={props.onButtonClick}/>
+                onClick={props.onButtonClick}
+                />
             <Close onClick={props.onClose}/>
         </header>
     )

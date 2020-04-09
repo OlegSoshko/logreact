@@ -3,6 +3,7 @@
     border: 1px solid #D9DFE5;
     box-sizing: border-box;
     border-radius: 2px;
+    margin: 5px 0px;
 }
 .card div:first-child span{
     color: #2C2730;

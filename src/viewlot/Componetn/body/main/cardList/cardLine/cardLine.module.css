@@ -1,5 +1,6 @@
 .CardLine{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 5px 0px;
 }
